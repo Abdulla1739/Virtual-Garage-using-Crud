@@ -1,0 +1,120 @@
+.NavBar {
+    background-color: #fff;
+    height: 70px;
+    margin: 40px;
+    border-radius: 100px;
+    padding: 0.5rem;
+}
+
+
+
+.NavH {
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #009970;
+    font-size: 2rem;
+    transition: 0.3s color;
+    text-decoration: none;
+
+}
+
+
+
+.loginButton {
+    background-color: #009970 !important;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 8px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    text-align: center;
+    font-weight: 500;
+    width: 130px;
+}
+
+.loginButton:hover {
+    background-color: #31ffc8 !important;
+}
+
+.SignUpButton {
+    background-color: #fff;
+    color: #009970;
+    border: 2px solid #009970 !important;
+    font-size: 1.2rem;
+    padding: 8px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    text-align: center;
+    font-weight: 500;
+    width: 130px;
+}
+
+.SignUpButton:hover {
+    background-color: #31ffc8;
+}
+
+@media screen and (max-width: 991px) {
+    .SignUpButton {
+        width: 100%;
+    }
+
+    .loginButton {
+        width: 100%;
+    }
+
+    .NavH {
+        font-weight: 700;
+        letter-spacing: 5px;
+        color: #009970;
+        font-size: 1rem;
+        transition: 0.3s color;
+    }
+}
+
+
+
+.navbarToggler {
+    border: none !important;
+    font-size: 1.25rem !important;
+}
+
+.navbarToggler:focus,
+.btnClose:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.NavLinks,
+.HashLink {
+    color: #666777;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+}
+
+.NaNavLinks:hover,
+.NavLinks:active {
+    color: #000;
+
+}
+
+.NavLinks::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.NavLinks:hover::before,
+.NavLinks:active::before {
+    width: 100%;
+    visibility: visible;
+}

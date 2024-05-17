@@ -1,0 +1,29 @@
+.heroSection {
+    background: url(../../assets/images/heroBg.jpg) no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.heroSection::before {
+    background-color: rgba(0, 0, 0, 0.1);
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.heroSection .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.heroSection h1 {
+    font-size: 1.5em;
+    font-weight: 700;
+    word-spacing: 1 0px;
+    letter-spacing: 5px;
+}
