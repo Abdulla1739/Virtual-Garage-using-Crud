@@ -29,23 +29,37 @@ const Add = () => {
     },
   });
 
-  const handleAdd = () => {
-    if (
-      formData.vName &&
-      formData.thumnailURL &&
-      formData.mName &&
-      formData.year
-    ) {
-      addGarageAPI(formData);
-      handleClose();
-      setFormData("");
-      toast.success("Added to Garage");
-      window.location.href = "/";
+  const handleAdd = async () => {
+    if (formData.vName && formData.thumnailURL && formData.mName && formData.year) {
+      try {
+        await addGarageAPI(formData);
+        handleClose();
+        setFormData({
+          userId: LocalUserid,
+          vName: "",
+          thumnailURL: "",
+          mName: "",
+          year: "",
+          VehicleCImgs: {
+            imgOne: "",
+            imgTwo: "",
+            imgThree: "",
+            imgFour: "",
+            imgFive: "",
+            imgSix: "",
+          },
+        });
+        toast.success("Added to Garage");
+        window.location.href = "/";
+      } catch (error) {
+        console.error("Error adding to garage:", error);
+        toast.error("Failed to add to Garage, please try again");
+      }
     } else {
-      // alert("Form is not complete");
-      toast.error("Form is not complete");
+        toast.error("Form is not complete");
     }
   };
+  
 
   return (
     <>
