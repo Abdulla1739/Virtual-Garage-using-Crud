@@ -39,6 +39,7 @@ const Add = () => {
       addGarageAPI(formData);
       handleClose();
       setFormData("");
+      toast.success("Added to Garage");
       window.location.href = "/";
     } else {
       // alert("Form is not complete");
