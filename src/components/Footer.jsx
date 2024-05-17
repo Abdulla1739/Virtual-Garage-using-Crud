@@ -4,7 +4,7 @@ import Logo from "../assets/images/Logo.png";
 
 const Footer = () => {
   return (
-    <div className="container  w-100 my-5">
+    <div className="container  w-100 my-5" id="contact">
       <div className="d-lg-flex justify-content-between ">
         <div style={{ width: "400px" }} className="intro ">
           <h5 className="py-2">
