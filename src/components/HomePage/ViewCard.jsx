@@ -108,7 +108,8 @@ const ViewCard = ({ displayData }) => {
                   </Card>
                 </SwiperSlide>
               )}
-              <SwiperSlide className="slider" style={{ height: "82%" }}>
+              {displayData.VehicleCImgs.imgThree&&
+                <SwiperSlide className="slider" style={{ height: "82%" }}>
                 <Card style={{ width: "100%", height: "100%" }}>
                   <Card.Img
                     style={{ width: "100%", height: "100%" }}
@@ -117,8 +118,9 @@ const ViewCard = ({ displayData }) => {
                     className="position-absolute"
                   />
                 </Card>
-              </SwiperSlide>
-              <SwiperSlide className="slider" style={{ height: "82%" }}>
+              </SwiperSlide>}
+              {displayData.VehicleCImgs.imgFour&&
+                <SwiperSlide className="slider" style={{ height: "82%" }}>
                 <Card style={{ width: "100%", height: "100%" }}>
                   <Card.Img
                     style={{ width: "100%", height: "100%" }}
@@ -127,8 +129,9 @@ const ViewCard = ({ displayData }) => {
                     className="position-absolute"
                   />
                 </Card>
-              </SwiperSlide>
-              <SwiperSlide className="slider" style={{ height: "82%" }}>
+              </SwiperSlide>}
+              {displayData.VehicleCImgs.imgFive&&
+                <SwiperSlide className="slider" style={{ height: "82%" }}>
                 <Card style={{ width: "100%", height: "100%" }}>
                   <Card.Img
                     style={{ width: "100%", height: "100%" }}
@@ -137,8 +140,9 @@ const ViewCard = ({ displayData }) => {
                     className="position-absolute"
                   />
                 </Card>
-              </SwiperSlide>
-              <SwiperSlide className="slider" style={{ height: "82%" }}>
+              </SwiperSlide>}
+              {displayData.VehicleCImgs.imgSix&&
+                <SwiperSlide className="slider" style={{ height: "82%" }}>
                 <Card style={{ width: "100%", height: "100%" }}>
                   <Card.Img
                     style={{ width: "100%", height: "100%" }}
@@ -147,7 +151,7 @@ const ViewCard = ({ displayData }) => {
                     className="position-absolute"
                   />
                 </Card>
-              </SwiperSlide>
+              </SwiperSlide>}
             </Swiper>
           </div>
         </Modal.Body>
