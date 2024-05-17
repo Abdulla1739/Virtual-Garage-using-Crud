@@ -114,6 +114,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="text"
                     id="ThumbnailURL"
                     class="form-control form-control-lg"
+                    value={formData?.thumnailURL}
                     onChange={(e) =>
                       setFormData({ ...formData, thumnailURL: e.target.value })
                     }
@@ -131,6 +132,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="text"
                     id="manufactureName"
                     class="form-control form-control-lg"
+                    value={formData?.mName}
                     onChange={(e) =>
                       setFormData({ ...formData, mName: e.target.value })
                     }
@@ -146,6 +148,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="number"
                     id="year"
                     class="form-control form-control-lg"
+                    value={formData?.year}
                     onChange={(e) =>
                       setFormData({ ...formData, year: e.target.value })
                     }
@@ -163,6 +166,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="text"
                     id="imgOne"
                     class="form-control form-control-lg"
+                    value={formData?.VehicleCImgs.imgOne}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -185,6 +189,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="text"
                     id="imgTwo"
                     class="form-control form-control-lg"
+                    value={formData?.VehicleCImgs.imgTwo}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -208,6 +213,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="text"
                     id="imgThree"
                     class="form-control form-control-lg"
+                    value={formData?.VehicleCImgs.imgThree}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -230,6 +236,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="text"
                     id="imgFour"
                     class="form-control form-control-lg"
+                    value={formData?.VehicleCImgs.imgFour}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -253,6 +260,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="text"
                     id="imgFive"
                     class="form-control form-control-lg"
+                    value={formData?.VehicleCImgs.imgFive}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
@@ -274,6 +282,7 @@ const UpdateData = ({ dataTransfer }) => {
                     type="text"
                     id="imgSix"
                     class="form-control form-control-lg"
+                    value={formData?.VehicleCImgs.imgSix}
                     onChange={(e) =>
                       setFormData({
                         ...formData,
